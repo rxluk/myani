@@ -1,0 +1,19 @@
+:root {
+  --bg: #0e0e11;
+  --surface: #18181c;
+  --line: #27272d;
+  --text: #f3f3f5;
+  --muted: #8d8d97;
+  --accent: #ff5c39;
+  --radius: 14px;
+  color-scheme: dark;
+}
+
+:root:has(#theme:checked) {
+  --bg: #f6f6f8;
+  --surface: #ffffff;
+  --line: #e4e4e9;
+  --text: #121216;
+  --muted: #6c6c76;
+  color-scheme: light;
+}

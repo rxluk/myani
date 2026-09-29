@@ -1,0 +1,17 @@
+.avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  font: 700 16px "Bricolage Grotesque", sans-serif;
+}
+
+.avatar--large { width: 104px; height: 104px; font-size: 44px; }
+
+@media (max-width: 720px) {
+  .avatar--large { width: 84px; height: 84px; font-size: 36px; }
+}

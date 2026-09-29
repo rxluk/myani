@@ -1,0 +1,12 @@
+.logo {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.logo__dot { color: var(--accent); }
+
+@media (max-width: 720px) {
+  .logo { font-size: 22px; }
+}

@@ -1,0 +1,5 @@
+.progress { height: 4px; background: var(--line); border-radius: 99px; overflow: hidden; }
+
+.progress--large { height: 6px; }
+
+.progress__bar { display: block; height: 100%; background: var(--accent); border-radius: inherit; }

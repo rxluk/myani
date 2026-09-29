@@ -1,0 +1,15 @@
+.field { display: grid; gap: 6px; font-size: 14px; font-weight: 500; }
+
+.field__input {
+  min-width: 0;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-weight: 400;
+  outline: none;
+  transition: border-color .2s;
+}
+.field__input:focus { border-color: var(--accent); }
+
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }

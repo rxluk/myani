@@ -1,0 +1,5 @@
+.container { max-width: 1120px; margin: 0 auto; padding: 32px clamp(16px, 4vw, 40px) 80px; }
+
+@media (max-width: 720px) {
+  .container { padding-top: 16px; }
+}

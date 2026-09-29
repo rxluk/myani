@@ -1,0 +1,14 @@
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 56px 0 24px;
+}
+
+.section-head__title { font-size: 26px; }
+
+@media (max-width: 720px) {
+  .section-head { margin: 40px 0 16px; }
+}
