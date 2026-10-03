@@ -1,25 +1,19 @@
 from flask import Flask
 
-from config.database_config import DB_CONNECTION_PARAMS, DatabaseConfig
-from repository.anime_repository import AnimeRepository
-from repository.episode_repository import EpisodeRepository
-from repository.genre_repository import GenreRepository
-from repository.permission_repository import PermissionRepository
-from repository.role_repository import RoleRepository
-from repository.user_repository import UserRepository
-from repository.watched_episode_repository import WatchedEpisodeRepository
+from controller import anime_bp, user_bp
 
 app = Flask(__name__)
 
-database = DatabaseConfig(DB_CONNECTION_PARAMS)
+app.register_blueprint(anime_bp, url_prefix="/animes")
+app.register_blueprint(user_bp, url_prefix="/users")
 
-anime_repository = AnimeRepository(database)
-episode_repository = EpisodeRepository(database)
-genre_repository = GenreRepository(database)
-permission_repository = PermissionRepository(database)
-role_repository = RoleRepository(database)
-user_repository = UserRepository(database)
-watched_episode_repository = WatchedEpisodeRepository(database)
+
+@app.after_request
+def allow_cors(response):
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+    return response
 
 
 if __name__ == "__main__":
