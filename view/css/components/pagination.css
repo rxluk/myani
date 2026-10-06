@@ -1,0 +1,10 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+.pagination:empty { display: none; }
+
+.pagination__label { color: var(--muted); font-size: 14px; }

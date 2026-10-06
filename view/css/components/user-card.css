@@ -1,0 +1,20 @@
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color .2s, transform .2s;
+}
+.user-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+.user-card__name { font-weight: 600; }
+.user-card__handle { color: var(--muted); font-size: 14px; }

@@ -17,7 +17,8 @@
 .topbar__link:hover,
 .topbar__link.is-active { color: var(--text); }
 
-.topbar__search { margin-left: auto; }
+.topbar__search,
+.topbar__theme { margin-left: auto; }
 
 .topbar__search-input {
   width: min(260px, 40vw);

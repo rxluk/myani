@@ -1,4 +1,5 @@
 .profile-header {
+  --banner: none;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -21,7 +22,7 @@
 .profile-header__handle { color: var(--muted); }
 .profile-header__logout { margin-left: auto; }
 
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 32px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 32px; }
 
 .stats__item {
   padding: 20px 24px;

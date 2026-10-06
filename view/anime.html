@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Perfil · Myani</title>
+  <title>Anime · Myani</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/api.js" defer></script>
-  <script src="js/profile.js" defer></script>
+  <script src="js/anime.js" defer></script>
 </head>
 <body>
   <input type="checkbox" id="theme" hidden>
@@ -18,11 +18,11 @@
     <a class="logo" href="index.html">myani<span class="logo__dot">.</span></a>
     <nav class="topbar__nav">
       <a class="topbar__link" href="index.html">Explorar</a>
-      <a class="topbar__link is-active" href="profile.html">Meu perfil</a>
+      <a class="topbar__link" href="profile.html">Meu perfil</a>
     </nav>
     <form class="topbar__search" role="search" action="index.html">
-      <input type="hidden" name="type" value="user">
-      <input class="topbar__search-input" type="search" name="q" placeholder="Buscar perfil..." aria-label="Buscar perfil">
+      <input type="hidden" name="type" value="anime">
+      <input class="topbar__search-input" type="search" name="q" placeholder="Buscar anime..." aria-label="Buscar anime">
     </form>
     <label class="theme-toggle" for="theme" aria-label="Alternar tema">
       <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -31,24 +31,13 @@
   </header>
 
   <main class="container">
-    <div id="profile-status"></div>
+    <div id="anime-status"></div>
 
-    <section class="profile-header" id="profile-header" hidden></section>
-
-    <div class="stats" id="stats" hidden></div>
-
-    <section id="animes-section" hidden>
-      <div class="section-head">
-        <h2 class="section-head__title">Animes assistidos</h2>
-        <span class="section-head__summary" id="animes-summary"></span>
-      </div>
-      <div id="animes-list"></div>
-      <nav class="pagination" aria-label="Paginação dos animes" id="animes-pagination"></nav>
-    </section>
+    <section class="hero" id="hero" hidden></section>
 
     <section id="episodes-section" hidden>
       <div class="section-head">
-        <h2 class="section-head__title" id="episodes-title">Episódios</h2>
+        <h2 class="section-head__title">Episódios</h2>
         <span class="section-head__summary" id="episodes-summary"></span>
       </div>
       <div id="episodes-list"></div>

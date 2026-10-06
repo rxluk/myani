@@ -12,6 +12,8 @@
 
 .avatar--large { width: 104px; height: 104px; font-size: 44px; }
 
+.avatar--image { object-fit: cover; }
+
 @media (max-width: 720px) {
   .avatar--large { width: 84px; height: 84px; font-size: 36px; }
 }

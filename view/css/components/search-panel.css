@@ -1,0 +1,22 @@
+.search-panel {
+  display: grid;
+  gap: 20px;
+  padding: 40px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.search-panel__title { font-size: clamp(32px, 5vw, 44px); line-height: 1.1; }
+.search-panel__subtitle { margin-top: 6px; color: var(--muted); }
+
+.search-panel__tabs { justify-self: start; }
+
+.search-panel__form { display: flex; gap: 12px; }
+.search-panel__input { flex: 1; }
+
+@media (max-width: 720px) {
+  .search-panel { padding: 24px 20px; }
+  .search-panel__tabs { justify-self: stretch; }
+  .search-panel__form { flex-direction: column; }
+}

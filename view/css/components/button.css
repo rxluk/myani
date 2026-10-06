@@ -19,3 +19,6 @@
   border: 1px solid var(--line);
 }
 .btn--ghost:hover { transform: none; filter: none; border-color: var(--text); }
+
+.btn:disabled { opacity: .4; cursor: not-allowed; transform: none; filter: none; }
+.btn--ghost:disabled:hover { border-color: var(--line); }

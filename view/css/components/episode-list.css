@@ -1,0 +1,25 @@
+.episode-list {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.episode-list__item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.episode-list__number {
+  min-width: 64px;
+  color: var(--accent);
+  font: 700 15px "Bricolage Grotesque", sans-serif;
+}
+
+.episode-list__title { font-weight: 600; }
+.episode-list__meta { color: var(--muted); font-size: 13px; }

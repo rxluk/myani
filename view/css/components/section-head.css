@@ -8,6 +8,7 @@
 }
 
 .section-head__title { font-size: 26px; }
+.section-head__summary { color: var(--muted); font-size: 14px; }
 
 @media (max-width: 720px) {
   .section-head { margin: 40px 0 16px; }

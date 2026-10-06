@@ -1,4 +1,5 @@
 .hero {
+  --banner: none;
   position: relative;
   display: flex;
   align-items: flex-end;

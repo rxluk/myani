@@ -12,6 +12,11 @@
 @import "components/tabs.css";
 @import "components/card.css";
 @import "components/field.css";
+@import "components/search-panel.css";
+@import "components/user-card.css";
+@import "components/episode-list.css";
+@import "components/pagination.css";
+@import "components/status-message.css";
 
 @import "pages/home.css";
 @import "pages/auth.css";
